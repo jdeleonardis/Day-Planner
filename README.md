@@ -11,7 +11,7 @@ The planner needs to:
 * Clicking the save button beside each timeblock saves data for that timeblock locally
 * Loading/Refreshing the page retrieves data from local storage
 
-# Extra Information
+### Extra Information
 * Most of the CSS, as well as a portion of HTML was provided for this project.
 * The provided HTML used the jumbotron component from bootstrap.  I continued using the bootstrap row/column functionality.
 * I used font awesome for the save buttons
