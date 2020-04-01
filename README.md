@@ -15,6 +15,7 @@ The planner needs to:
 * Most of the CSS, as well as a portion of HTML was provided for this project.
 * The provided HTML used the jumbotron component from bootstrap.  I continued using the bootstrap row/column functionality.
 * I used font awesome for the save buttons
+* I added one extra piece of functionality - there is a timer that checks every 30 seconds to see if the hour has changed.  If it has, the colors on the calendar update accordingly.
 
 # Usage
 Website can be accessed at: https://jdeleonardis.github.io/homework_5_day_planner/
