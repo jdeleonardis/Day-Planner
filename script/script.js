@@ -9,7 +9,8 @@ $(document).ready(function() {
     setTimeInterval();
 
     //if any of the save buttons are clicked, save the data for that row
-    $('button').click(function(){
+    //$('button').click(function(){
+    $("button").on("click", function() {        
         //get the entered input....
         var enteredInput = $(this).siblings('.description').val();       
 
