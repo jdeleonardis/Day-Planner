@@ -23,11 +23,12 @@ $(document).ready(function() {
 
     //get todays date
     function getTodaysDate() {
-        var monthNames = ["January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"];
+        // var monthNames = ["January", "February", "March", "April", "May", "June",
+        // "July", "August", "September", "October", "November", "December"];
 
-        var d = new Date();
-        $("#currentDay").text(monthNames[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear());
+        // var d = new Date();
+        // $("#currentDay").text(monthNames[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear());
+        $("#currentDay").text(moment().format('MMMM Do, YYYY'));
     };
 
     //get all of the saved descriptions for each hour
@@ -58,13 +59,18 @@ $(document).ready(function() {
                 var divTime = parseInt(divId);                
                 
                 //compare the current hour to the block hour and do some class changing.
-                var h = new Date();
+                // var h = new Date();
+                // console.log(moment().format('H'));
 
-                if (divTime < h.getHours()){
+                var h = moment().format('H');
+
+                //if (divTime < h.getHours()){
+                if (divTime < h){                    
                     //console.log("past");
                     $(this).children('.description').attr("class","col-md-10 description past");
                 }
-                else if (divTime == h.getHours()) {
+                //else if (divTime == h.getHours()) {
+                else if (divTime == h) {
                     //console.log("present");
                     $(this).children('.description').attr("class","col-md-10 description present");                    
                 }
